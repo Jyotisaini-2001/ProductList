@@ -49,8 +49,11 @@ function ProductList() {
   const increasePrice = (id) => {
     const updatedProducts = [...products];
     const index = updatedProducts.findIndex((product) => product.id === id);
+   
     updatedProducts[index].price += 1;
+    
     setProducts(updatedProducts);
+
   };
 
   const decreasePrice = (id) => {
@@ -68,7 +71,7 @@ function ProductList() {
       <div className='row'>
         {products.map((product) => (
           <div className='col-md-4' key={product.id}>
-            <div className='card mb-4'>
+            <div className='card mb-4 wrap'>
               <div className='card-body'>
                 <h5 className='card-title'>{product.title}</h5>
                 <p className='card-text'>{product.description}</p>
@@ -77,7 +80,7 @@ function ProductList() {
                   <button
                     type='button'
                     className='btn btn-primary'
-                    onClick={() => increasePrice(product.id)}
+                    onClick={() => increasePrice(product.id, product.price)}
                   >
                     Increase
                   </button>
