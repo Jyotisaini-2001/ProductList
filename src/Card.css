@@ -58,4 +58,57 @@
     color: #21d527;
     font-size: 1rem;
   }
+@media screen and (max-width: 576px) {
+    .card {
+      width: 100%;
+      margin-bottom: 1rem;
+      margin: 0 auto;
+     
+    }
+  }
+  
+  /* Styles for medium screens (up to 768px) */
+  /* CSS for screen size 412px to 766px */
+  @media only screen and (min-width: 577px) and (max-width: 760px) {
+   
+    .card {
+      flex-basis: 48%;
+      margin-bottom: 15px;
+      margin: 0 auto;
+    }
+  
+   
+  
+    .btn-group {
+      margin: auto;
+    }
+  }
+  
+  @media screen and (min-width: 761px) and (max-width: 990px) {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .col-md-4 {
+      flex: 0 0 calc(50% - 1rem);
+      margin-bottom: 1rem;
+    }
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .btn {
+      width: 100%;
+      font-size: 10px;
+      
+    }
+    
+  }
+  
+  
   
