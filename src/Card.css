@@ -69,7 +69,7 @@
   }
   
   .card .price button {
-    background-color: red;
+    background-color: #f7f7f7;
     border: none;
     border-radius: 50%;
     cursor: pointer;
