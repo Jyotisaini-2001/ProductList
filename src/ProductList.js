@@ -30,7 +30,7 @@
 
 // export default ProductList;
 import React, { useState, useEffect } from 'react';
-import './Card.css'; 
+// import './Card.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductList() {
@@ -70,8 +70,8 @@ function ProductList() {
       <h1 className='text-center mb-4'>Product List</h1>
       <div className='row'>
         {products.map((product) => (
-          <div className='col-md-4' key={product.id}>
-            <div className='card mb-4 wrap'>
+          <div className='col-md-4' key={product.id} >
+            <div className='card mb-4 shadow p-3 mb-5 bg-white rounded' >
               <div className='card-body'>
                 <h5 className='card-title'>{product.title}</h5>
                 <p className='card-text'>{product.description}</p>
