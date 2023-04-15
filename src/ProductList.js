@@ -70,8 +70,13 @@ function ProductList() {
       <h1 className='text-center mb-4'>Product List</h1>
       <div className='row'>
         {products.map((product) => (
+<<<<<<< HEAD
           <div className='col-md-4' key={product.id} >
             <div className='card mb-4 shadow p-3 mb-5 bg-white rounded' >
+=======
+          <div className='col-md-4' key={product.id}>
+            <div className='card mb-4 shadow p-3 mb-5 bg-white rounded'>
+>>>>>>> fca971bc4aa0a64696c8acb79e9b3f54b5af0127
               <div className='card-body'>
                 <h5 className='card-title'>{product.title}</h5>
                 <p className='card-text'>{product.description}</p>
