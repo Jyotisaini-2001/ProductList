@@ -41,32 +41,32 @@ function ProductList() {
       <div className='row'>
         {products.map((product) => (
  
- <div className='col-md-4' key={product.id}>
- <div className='card mb-4 shadow p-3 mb-5 bg-white rounded'>
-   <div className='card-body'>
-     <h5 className='card-title'>{product.title}</h5>
-     <p className='card-text'>{product.description}</p>
-     <p className='card-text'>Price: ${product.price}</p>
-     <div className='btn-group'>
-       <button
-         type='button'
-         className='btn btn-primary'
-         onClick={() => increasePrice(product.id)}
-       >
-         Increase
-       </button>
-       <button
-         type='button'
-         className='btn btn-danger'
-         onClick={() => decreasePrice(product.id)}
-       >
-         Decrease
-       </button>
-     </div>
-   </div>
- </div>
-</div>
-
+        <div className='col-md-4' key={product.id}>
+            <div className='card mb-4 shadow p-3 mb-5 bg-white rounded'>
+                  <div className='card-body'>
+                  <h5 className='card-title'>{product.title}</h5>
+                    <p className='card-text'>{product.description}</p>
+                    <p className='card-text'>Price: ${product.price}</p>
+                    <div className='btn-group'>
+                      <button
+                        type='button'
+                        className='btn btn-primary'
+                        onClick={() => increasePrice(product.id)}
+                      >
+                        Increase
+                      </button>
+                      <button
+                        type='button'
+                        className='btn btn-danger'
+                        onClick={() => decreasePrice(product.id)}
+                      >
+                        Decrease
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
         ))}
       </div>
     </div>

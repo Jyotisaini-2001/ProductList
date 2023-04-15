@@ -27,7 +27,7 @@
   
 
 
- @media screen and (min-width: 761px) and (max-width: 990px) {
+ /* @media screen and (min-width: 761px) and (max-width: 990px) {
 
     .container {
       max-width: 1000px;
@@ -48,12 +48,12 @@
     }
 
     .button {
-      /* width: -200px; */
+      
        font-size: 12px;
      }
 
     .btn-group {
-      /* width: -200px; */
+      
       margin-right: 10px;
     
     
@@ -64,9 +64,7 @@
   
    
   
-   /* .wrap {
-    flex-wrap: wrap;
-  } */
+   
   .col {
     flex-basis: 200px;
     flex-shrink: 1;
@@ -130,4 +128,4 @@
     color: #21d527;
     font-size: 1rem;
   }
-  /* Styles for small screens (up to 576px) */
+  */
